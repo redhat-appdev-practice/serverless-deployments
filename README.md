@@ -8,7 +8,7 @@ Below is a picture of the source code of the greet endpoint for reference.
    
    ![Greet Endpoint](greet.png)
 
-The application has been containerized and pushed to an image repository, the image is available [here](quay.io/cmwylie19/node-server).   
+The application has been containerized and pushed to an image repository, the image is available [here](https://quay.io/cmwylie19/node-server).   
 
 ## Prereqs
 I have installing `wget` listed as a prerequisite to the lab in order to simply the process of installing the `kn` cli tool later on. This part is _not mandatory_ but will simplify the installation process.   
@@ -40,7 +40,7 @@ brew install wget
 We will start by installing Serverless in OpenShift via the OpenShift Serverless Operator. If you are using [minikube](https://gitlab.consulting.redhat.com/appdev-coe/cloud-native-appdev-enablement/serverless-enablement/introduction/-/blob/master/minikube.md) you can *skip to the section on installing the knative cli*.
 
 ### Install the OpenShift Serverless Operator and subscription
-Follow the instructions listed [here](https://docs.openshift.com/container-platform/4.5/serverless/installing_serverless/installing-knative-serving.html) if you are using an OpenShift Cluster. If you are using CodeReady Containers you can use `oc apply` on the knative-operator.crc.yaml to get the operator i nstalled.
+Follow the instructions listed [here](https://docs.openshift.com/container-platform/4.5/serverless/installing_serverless/installing-knative-serving.html) if you are using an OpenShift Cluster. If you are using CodeReady Containers you can use `oc apply` on the knative-operator.crc.yaml to get the operator installed.
 ```
 oc apply -f knative-operator.crc.yaml 
 ```
